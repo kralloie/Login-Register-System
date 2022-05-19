@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style src = "stylestuff.css"></style>
+    <head>
+        <meta charset = "UTF-8">
+        <link rel="shortcut icon" type="image/jpg" href="anna.jpg" />
+    </head>
+  <body style ="background-size: 100%; background-color:rgb(77, 12, 44);">
+        <h2 class="headerText">
+            Register
+        </h2>
+     
+            <form class="container" method="post" action="/register">   
+
+                <div class="form-group">
+                    <input class="lolx" name="regmail" placeholder="Username / E-Mail" type="email" required/>
+                </div>
+                <div class="form-group">
+                    <input class="lolx" name="regpass" placeholder="Password" type="password" required />
+                </div>
+                    <button type="submit" class="lol">Accept</button>
+            </form>
+  </body>
+        <form action="/home.html">
+            <input type="submit" class="indexButtonStyle" value="Go to Home Page"/>
+        </form>
+</html>
+
+<style>
+    button.lol
+    {
+        position:fixed;
+        background-color: black;
+        color: #4800ff;
+        border: 2px solid #4800ff;
+        border-radius: 50px;
+    }
+    button.lol:hover
+    {
+        background-color: #4800ff;
+        color: black;
+        transition: .5s;
+    }
+    input.indexButtonStyle
+    {   
+        position: absolute;
+        left: 0.8%;
+        top: 80%;
+        background-color: black;
+        color: #4800ff;
+        border: 2px solid #4800ff;
+        border-radius: 50px;
+    }
+    input.indexButtonStyle:hover
+    {
+        background-color: #4800ff;
+        color: black;
+        border: 2px solid #7345e7;
+        transition: .5s;
+    }
+    input.lolx
+    {
+        background-color: black;
+        color: #4800ff;
+        border: 2px solid #4800ff;
+        border-radius: 50px;
+    }
+    input.lolx:hover
+    {
+        background-color: #4800ff;
+        color: black;
+        border: 2px solid #4800ff;
+        transition: .5s;
+    }
+    h2.headerText
+    {
+        border-radius: 10px;
+        width: 120px;
+        background: linear-gradient(90deg,crimson,purple);
+        color: rgba(106, 0, 255, 0.206);
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+</style>

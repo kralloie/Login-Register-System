@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color: rgb(77, 12, 44); font-family: 'Courier New', Courier, monospace;">
+    <div>
+        <form action="/login" method="post">
+           <h2 class="headerText">
+               Log In
+           </h2>
+           <form class="container">
+           <div>
+           <input class="lolx" placeholder="Username / E-mail" type="email" name="logmail" required/>
+           </div>
+           <div>
+           <input class="lolx" placeholder="Password" type="password" name="logpass" required/>
+           </div>
+           <button type="submit" class="lol">
+               Accept
+           </button>
+           </form>
+       </form>
+    </div>
+    <form action="/home.html">
+        <input type="submit" class="indexButtonStyle" value="Go to Home Page"/>
+    </form>
+</body>
+</html>
+<style>
+    button.lol
+    {
+        position:fixed;
+        background-color: black;
+        color: #4800ff;
+        border: 2px solid #4800ff;
+        border-radius: 50px;
+    }
+    button.lol:hover
+    {
+        background-color: #4800ff;
+        color: black;
+        transition: .5s;
+    }
+    input.indexButtonStyle
+    {   
+        position: absolute;
+        left: 0.8%;
+        top: 80%;
+        background-color: black;
+        color: #4800ff;
+        border: 2px solid #4800ff;
+        border-radius: 50px;
+    }
+    input.indexButtonStyle:hover
+    {
+        background-color: #4800ff;
+        color: black;
+        border: 2px solid #7345e7;
+        transition: .5s;
+    }
+    input.lolx
+    {
+        background-color: black;
+        color: #4800ff;
+        border: 2px solid #4800ff;
+        border-radius: 50px;
+    }
+    input.lolx:hover
+    {
+        background-color: #4800ff;
+        color: black;
+        border: 2px solid #4800ff;
+        transition: .5s;
+    }
+    h2.headerText
+    {   
+        border-radius: 10px;
+        width: 90px;
+        background: linear-gradient(90deg,crimson,purple);
+        color: rgba(106, 0, 255, 0.206);
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+</style>
