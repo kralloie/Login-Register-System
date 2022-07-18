@@ -17,7 +17,7 @@ const hash = (hash_victim) =>
 
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(express.json());
-mongoose.connect("mongodb+srv://kralloie8:cacoculo811@cluster0.ukjca.mongodb.net/myUserStorage",{useNewUrlParser: true},{useUnifiedTopology: true});
+mongoose.connect("token",{useNewUrlParser: true},{useUnifiedTopology: true});
 
 const userInfoSchema =
 {
@@ -47,7 +47,7 @@ app.get("/home.html",(req,res) =>{
 
 const updateDB = () => {
   return new Promise((resolve,reject)=>{
-   MongoClient.connect('mongodb+srv://kralloie8:cacoculo811@cluster0.ukjca.mongodb.net/myUserStorage',{useNewUrlParser: true}, (error,result) =>{
+   MongoClient.connect('token',{useNewUrlParser: true}, (error,result) =>{
       if (error) throw error;
       console.log("Data updated");
       database = result.db('myUserStorage');
@@ -135,7 +135,7 @@ app.post('/login', async (req,res)=>
 
  
 app.listen(8080,() =>{
-  MongoClient.connect('mongodb+srv://kralloie8:cacoculo811@cluster0.ukjca.mongodb.net/myUserStorage',{useNewUrlParser: true}, function(error,result){
+  MongoClient.connect('token',{useNewUrlParser: true}, function(error,result){
     if (error) throw error;
     database = result.db('myUserStorage');
     console.log("soy un server de mierda")
